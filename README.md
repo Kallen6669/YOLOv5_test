@@ -1,0 +1,1 @@
+该项目是用于体验yolo系列的编程，分别由jittor和pytorch两个框架实现。
