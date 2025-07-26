@@ -1,6 +1,6 @@
 该项目是用于体验yolo系列的编程，分别由jittor和pytorch两个框架实现。
 
-### 云服务器连接该项目的流程
+### 云服务器连接该项目的流程(作者为了方便写的，读者无需在意)
 1. 设置用户名和邮箱
 ```
 git config --global user.name  ""
@@ -26,8 +26,18 @@ Host github.com
 ssh -T git@github.com
 ```
 3. 拷贝代码
+```
 git clone https://github.com/Kallen6669/YOLOv5_test.git
+```
 
 4. 远程连接
+```
 git remote set-url origin git@github.com:Kallen6669/YOLOv5_test.git
 git push origin main
+```
+
+### 环境
+需要进行两个vscode的python拓展的下载
+```
+pip install ultralytics
+```
