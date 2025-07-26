@@ -29,5 +29,5 @@ ssh -T git@github.com
 git clone https://github.com/Kallen6669/YOLOv5_test.git
 
 4. 远程连接
-git remote add origin https://github.com/Kallen6669/YOLOv5_test.git
-git push origin master
+git remote set-url origin git@github.com:Kallen6669/YOLOv5_test.git
+git push origin main
