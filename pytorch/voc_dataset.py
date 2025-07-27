@@ -1,4 +1,5 @@
 from torch.utils.data import Dataset, DataLoader
+from PIL import Image
 import os
 
 
@@ -17,7 +18,11 @@ class VOCDataset(Dataset):
         return len(self.image_list)
     
     def __getitem__(self, idx):
-        return None
+        image_path = os.path.join(self.image_dir, self.image_list[idx])
+        label_path = os.path.join(self.label_dir, self.label_list[idx])
+        image = Image.open(image_path).convert("RGB")
+        label = Image.open(label_path).convert("L")
+        return image, label
 
 
 def main():
